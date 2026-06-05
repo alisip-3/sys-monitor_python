@@ -1,4 +1,4 @@
-# Resource Monitor - Context-Based Intrusion Detection
+# Resource Monitor Context-Based Intrusion Detection
 
 A Python tool that monitors running processes on a Windows machine and alerts when something looks suspicious. Built as a learning project while studying cybersecurity.
 
