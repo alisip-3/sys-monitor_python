@@ -2,7 +2,7 @@
 
 A Python tool that monitors running processes on a Windows machine and alerts when something looks suspicious. Built as a learning project while studying cybersecurity.
 
-The idea behind it is not just to look at CPU usage or process names, but to understand the **context** of each process - where it's running from, who opened it, and what it's doing.
+The idea behind it is not just to look at CPU usage or process names, but to understand the **context** of each process where it's running from, who opened it, and what it's doing.
 
 ---
 
