@@ -33,6 +33,7 @@ python monitor.py
 pip install psutil plyer
 ```
 
+
 Keep it running in the background. Alerts will appear in the terminal and get saved to `alerts.log`.
 
 ---
