@@ -1,6 +1,7 @@
 import psutil
 import time
 from datetime import datetime
+from plyer import notification
 
 # processes we trust checked by exact path
 TRUSTED_PROCESSES = {
@@ -162,5 +163,9 @@ while True:
                 reasons.append("suspicious parent process")
 
             print(f"!!! ALERT: '{p['name']}' (PID: {p['pid']}) – {', '.join(reasons)} !!!")
-
+            notification.notify(
+    title="Security Alert",
+    message=f"{p['name']} – {', '.join(reasons)}",
+    timeout=5
+)
     time.sleep(3)
