@@ -30,6 +30,8 @@ Then run the monitor:
 ```
 python monitor.py
 ```
+pip install psutil plyer
+```
 
 Keep it running in the background. Alerts will appear in the terminal and get saved to `alerts.log`.
 
@@ -70,3 +72,4 @@ simulation_living_off_the_land.py   - simulation 4
 - Built and tested on Windows 11
 - Requires Python 3.10+
 - alerts.log is not included in the repo
+- Desktop notifications powered by plyer – alerts appear even when the terminal is minimized
