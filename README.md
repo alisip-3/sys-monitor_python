@@ -58,6 +58,16 @@ Opens powershell.exe from an untrusted parent process. This simulates a common a
 
 ---
 
+## Future Improvements
+Currently, the monitor's detection logic and the graphical interface (Tkinter) are tightly coupled (for example, the function checking the CPU is the one directly triggering the warning window).
+
+### My next goal is to separate these concerns:
+
+- Rewrite the code so the monitor focuses solely on security and data collection, without needing to know anything about the UI.
+
+- The objective is to allow the monitor to run as an independent, quiet background agent (Headless Agent). If it detects an attack, it will simply send a signal to the system, and a completely separate graphical component will handle displaying the alert to the user.
+
+
 ## Project structure
 
 ```
