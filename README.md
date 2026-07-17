@@ -58,6 +58,11 @@ Opens powershell.exe from an untrusted parent process. This simulates a common a
 
 ---
 
+## Example of a generated log entry:
+[2026-06-05 07:54:25] WARNING: Process 'chrome.exe' (PID: 12272) flagged. Fake Chrome: True, Suspicious Child: False, Suspicious Path: True, Suspicious Parent: False, Suspicious Cmdline: True
+[2026-06-05 08:14:07] WARNING: Process 'powershell.exe' (PID: 2856) flagged. Fake Chrome: False, Suspicious Child: False, Suspicious Path: False, Suspicious Parent: True, Suspicious Cmdline: False
+
+
 ## Future Improvements
 Currently, the monitor's detection logic and the graphical interface (Tkinter) are tightly coupled (for example, the function checking the CPU is the one directly triggering the warning window).
 
